@@ -47,6 +47,11 @@ public class PatientService : IPatientService
                         Date = pr.Date,
                         DueDate = pr.DueDate,
                         IdPrescription = pr.IdPrescription,
+                        Doctor = new DoctorPatientDTO
+                        {
+                            IdDoctor = pr.Doctor.IdDoctor,
+                            FirstName = pr.Doctor.FirstName
+                        }, 
                         Medicaments = pr.PrescriptionMedicaments
                             .Select(pm => new MedicamentPatientDTO()
                             {

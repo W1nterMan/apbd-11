@@ -15,7 +15,13 @@ public class PrescriptionPatientDTO
     public DateTime Date { get; set; }
     public DateTime DueDate { get; set; }
     public List<MedicamentPatientDTO> Medicaments { get; set; }
+    public DoctorPatientDTO Doctor { get; set; }
+}
+
+public class DoctorPatientDTO
+{
     public int IdDoctor { get; set; }
+    public string FirstName { get; set; }
 }
 
 public class MedicamentPatientDTO
