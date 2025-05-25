@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
     {
         private readonly IPatientService _patientService;
         
-        PatientsController(IPatientService patientService)
+        public PatientsController(IPatientService patientService)
         {
             _patientService = patientService;
         }
